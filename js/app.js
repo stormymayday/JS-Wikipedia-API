@@ -5,4 +5,5 @@ const url =
 
 const form = getElement('.form');
 const formInput = getElement('.form-input');
-console.log(formInput);
+const resultsDiv = getElement('.results');
+console.log(resultsDiv);
