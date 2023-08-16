@@ -11,6 +11,9 @@ const fetchPages = async (searchValue) => {
 
     } catch (error) {
 
+        // Displaying the error message
+        resultsDiv.innerHTML = `<div class="error">There was an error</div>`;
+
     }
 
 };
