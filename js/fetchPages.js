@@ -16,7 +16,7 @@ const fetchPages = async (searchValue) => {
 
         const data = await response.json();
 
-        console.log(data);
+        return data;
 
     } catch (error) {
 

@@ -1,5 +1,6 @@
 import getElement from "./utils/getElement.js";
 import fetchPages from "./fetchPages.js";
+import renderResults from "./renderResults.js";
 
 const url =
     'https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=20&format=json&origin=*&srsearch=';
@@ -8,7 +9,7 @@ const form = getElement('.form');
 const formInput = getElement('.form-input');
 const resultsDiv = getElement('.results');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', async (e) => {
 
     e.preventDefault();
 
@@ -25,7 +26,9 @@ form.addEventListener('submit', (e) => {
 
     } else {
 
-        fetchPages(inputValue);
+        const list = await fetchPages(inputValue);
+
+        renderResults(list);
 
     }
 
