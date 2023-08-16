@@ -32,7 +32,7 @@ form.addEventListener('submit', async (e) => {
         if (list.length < 1) {
 
             // Displaying the error message
-            resultsDiv.innerHTML = `<div class="error">no matching results, please try again</div>`;
+            resultsDiv.innerHTML = `<div class="error">no matching results. please try again</div>`;
 
             return;
         }
