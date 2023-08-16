@@ -1,6 +1,12 @@
+import getElement from "./utils/getElement.js";
+
 const fetchPages = async (searchValue) => {
 
-    console.log(searchValue);
+    try {
+
+    } catch (error) {
+
+    }
 
 };
 
