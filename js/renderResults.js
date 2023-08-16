@@ -1,6 +1,10 @@
 const renderResults = (list) => {
 
-    console.log(list);
+    const cardsList = list.map((item) => {
+
+        console.log(item);
+
+    });
 
 };
 
