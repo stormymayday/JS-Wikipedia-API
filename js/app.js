@@ -6,4 +6,11 @@ const url =
 const form = getElement('.form');
 const formInput = getElement('.form-input');
 const resultsDiv = getElement('.results');
-console.log(resultsDiv);
+
+form.addEventListener('submit', (e) => {
+
+    e.preventDefault();
+
+    console.log(formInput.value);
+
+});
