@@ -11,6 +11,6 @@ form.addEventListener('submit', (e) => {
 
     e.preventDefault();
 
-    console.log(formInput.value);
+    const inputValue = formInput.value;
 
 });
