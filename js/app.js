@@ -1,4 +1,5 @@
 import getElement from "./utils/getElement.js";
+import fetchPages from "./fetchPages.js";
 
 const url =
     'https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=20&format=json&origin=*&srsearch=';
@@ -21,6 +22,10 @@ form.addEventListener('submit', (e) => {
 
         // Exiting the function
         return;
+
+    } else {
+
+        fetchPages(inputValue);
 
     }
 
