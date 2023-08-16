@@ -13,4 +13,15 @@ form.addEventListener('submit', (e) => {
 
     const inputValue = formInput.value;
 
+    // Checking if the inputValue is falsy
+    if (!inputValue) {
+
+        // Displaying the error message
+        resultsDiv.innerHTML = `<div class="error">please enter valid search term</div>`;
+
+        // Exiting the function
+        return;
+
+    }
+
 });
