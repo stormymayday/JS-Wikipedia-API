@@ -28,6 +28,15 @@ form.addEventListener('submit', async (e) => {
 
         const list = await fetchPages(inputValue);
 
+        // Checking if the list is empty
+        if (list.length < 1) {
+
+            // Displaying the error message
+            resultsDiv.innerHTML = `<div class="error">There was an error</div>`;
+
+            return;
+        }
+
         renderResults(list);
 
     }
